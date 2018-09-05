@@ -136,6 +136,7 @@ class RaidManager:
         elif not self.logging_out:
             self.hashed_active_raids.pop(hash(raid), None)
             self.raid_map.pop(raid.display_id, None)
+        return raid
 
     def get_raid(self, raid_id_str):
         if raid_id_str.lower().startswith('ex'):

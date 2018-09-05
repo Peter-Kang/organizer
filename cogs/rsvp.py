@@ -148,6 +148,14 @@ class Rsvp:
 
         await self.finish_reporting_manual_raid(ctx, raid)
 
+    @commands.command(aliases=['removeraid'])
+    @commands.has_role(aliases=['Moderators'])
+    async def report_raid(self, ctx, raid_id: str):
+        raid = ctx.raids.get_raid(raid_id)
+        result = await ctx.raids.remove_raid(raid)
+        msg = f'Removed Raid: { raid }.'
+        await ctx.author.send(msg)
+
     @commands.command(aliases=['reportraid'])
     @commands.has_role('Raid Reporter')
     async def report_raid(self, ctx, gym_name: str, level: int, pokemon_name: str, latitude: Decimal,
