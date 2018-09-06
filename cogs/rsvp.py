@@ -150,7 +150,7 @@ class Rsvp:
 
     @commands.command(aliases=['removeraid'])
     @commands.has_role(aliases=['Moderators'])
-    async def report_raid(self, ctx, raid_id: str):
+    async def manual_remove_raid(self, ctx, raid_id: str):
         raid = ctx.raids.get_raid(raid_id)
         result = await ctx.raids.remove_raid(raid)
         msg = f'Removed Raid: { raid }.'
