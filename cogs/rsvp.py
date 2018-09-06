@@ -149,7 +149,7 @@ class Rsvp:
         await self.finish_reporting_manual_raid(ctx, raid)
 
     @commands.command(aliases=['removeraid'])
-    @commands.has_role(aliases=['Moderators'])
+    @commands.has_role('Moderators')
     async def manual_remove_raid(self, ctx, raid_id: str):
         raid = ctx.raids.get_raid(raid_id)
         result = await ctx.raids.remove_raid(raid)
