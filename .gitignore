@@ -105,3 +105,21 @@ properties.ini
 
 # JetBrains project files
 .idea
+*.cfg
+bot-env/Scripts/activate
+bot-env/Scripts/activate.bat
+bot-env/Scripts/Activate.ps1
+bot-env/Scripts/deactivate.bat
+bot-env/Scripts/easy_install-3.6.exe
+bot-env/Scripts/easy_install.exe
+bot-env/Scripts/pip.exe
+bot-env/Scripts/pip3.6.exe
+bot-env/Scripts/pip3.exe
+bot-env/Scripts/python.exe
+bot-env/Scripts/python3.dll
+bot-env/Scripts/python36.dll
+bot-env/Scripts/pythonw.exe
+bot-env/Scripts/sqlite3.dll
+bot-env/Scripts/tcl86t.dll
+bot-env/Scripts/tk86t.dll
+bot-env/Scripts/vcruntime140.dll
